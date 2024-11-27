@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hospital Management System</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Hospital Management System</h1>
+    </header>
+
+    <nav class="navbar">
+      <a href="#patients">Patients</a>
+      <a href="#doctors">Doctors</a>
+      <a href="#appointments">Appointments</a>
+    </nav>
+
+    <main>
+      <!-- Patients Section -->
+      <section id="patients">
+        <h2>Manage Patients</h2>
+        <form id="patient-form">
+          <input
+            type="text"
+            id="patient-name"
+            placeholder="Patient Name"
+            required
+          />
+          <input type="number" id="patient-age" placeholder="Age" required />
+          <button type="submit">Add Patient</button>
+        </form>
+        <ul id="patient-list"></ul>
+      </section>
+
+      <!-- Doctors Section -->
+      <section id="doctors">
+        <h2>Manage Doctors</h2>
+        <form id="doctor-form">
+          <input
+            type="text"
+            id="doctor-name"
+            placeholder="Doctor Name"
+            required
+          />
+          <input
+            type="text"
+            id="doctor-specialty"
+            placeholder="Specialty"
+            required
+          />
+          <button type="submit">Add Doctor</button>
+        </form>
+        <ul id="doctor-list"></ul>
+      </section>
+
+      <!-- Appointments Section -->
+      <section id="appointments">
+        <h2>Manage Appointments</h2>
+        <form id="appointment-form">
+          <input
+            type="text"
+            id="appointment-patient"
+            placeholder="Patient Name"
+            required
+          />
+          <input
+            type="text"
+            id="appointment-doctor"
+            placeholder="Doctor Name"
+            required
+          />
+          <input type="datetime-local" id="appointment-time" required />
+          <button type="submit">Add Appointment</button>
+        </form>
+        <ul id="appointment-list"></ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2024 Hospital Management System. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
