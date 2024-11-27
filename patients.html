@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patients Management</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Patients Management</h1>
+    </header>
+
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="doctors.html">Doctors</a>
+      <a href="appointments.html">Appointments</a>
+    </nav>
+
+    <main>
+      <section>
+        <h2>Manage Patients</h2>
+        <form id="patient-form">
+          <input
+            type="text"
+            id="patient-name"
+            placeholder="Patient Name"
+            required
+          />
+          <input type="number" id="patient-age" placeholder="Age" required />
+          <button type="submit">Add Patient</button>
+        </form>
+        <ul id="patient-list"></ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2024 Hospital Management System. All Rights Reserved.</p>
+    </footer>
+
+    <script src="patients.js"></script>
+  </body>
+</html>

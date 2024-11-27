@@ -12,75 +12,24 @@
     </header>
 
     <nav class="navbar">
-      <a href="#patients">Patients</a>
-      <a href="#doctors">Doctors</a>
-      <a href="#appointments">Appointments</a>
+      <a href="doctors.html">Doctors</a>
+      <a href="appointments.html">Appointments</a>
     </nav>
+    <a href="patients.html">
+      <img src="patient.png" alt="Patients Icon" class="icon" />
 
+      <a href="patients.html">Patients</a>
+    </a>
     <main>
-      <!-- Patients Section -->
-      <section id="patients">
-        <h2>Manage Patients</h2>
-        <form id="patient-form">
-          <input
-            type="text"
-            id="patient-name"
-            placeholder="Patient Name"
-            required
-          />
-          <input type="number" id="patient-age" placeholder="Age" required />
-          <button type="submit">Add Patient</button>
-        </form>
-        <ul id="patient-list"></ul>
-      </section>
-
-      <!-- Doctors Section -->
-      <section id="doctors">
-        <h2>Manage Doctors</h2>
-        <form id="doctor-form">
-          <input
-            type="text"
-            id="doctor-name"
-            placeholder="Doctor Name"
-            required
-          />
-          <input
-            type="text"
-            id="doctor-specialty"
-            placeholder="Specialty"
-            required
-          />
-          <button type="submit">Add Doctor</button>
-        </form>
-        <ul id="doctor-list"></ul>
-      </section>
-
-      <!-- Appointments Section -->
-      <section id="appointments">
-        <h2>Manage Appointments</h2>
-        <form id="appointment-form">
-          <input
-            type="text"
-            id="appointment-patient"
-            placeholder="Patient Name"
-            required
-          />
-          <input
-            type="text"
-            id="appointment-doctor"
-            placeholder="Doctor Name"
-            required
-          />
-          <input type="datetime-local" id="appointment-time" required />
-          <button type="submit">Add Appointment</button>
-        </form>
-        <ul id="appointment-list"></ul>
+      <section>
+        <h2>Welcome to the Hospital Management System</h2>
+        <p>
+          Use the navigation bar to manage Patients, Doctors, and Appointments.
+        </p>
       </section>
     </main>
 
-    <footer class="footer">
-      <p>&copy; 2024 Hospital Management System. All Rights Reserved.</p>
-    </footer>
+    <footer class="footer"></footer>
 
     <script src="script.js"></script>
   </body>

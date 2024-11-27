@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doctors Management</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Doctors Management</h1>
+    </header>
+
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="patients.html">Patients</a>
+      <a href="appointments.html">Appointments</a>
+    </nav>
+
+    <main>
+      <section>
+        <h2>Manage Doctors</h2>
+        <form id="doctor-form">
+          <input
+            type="text"
+            id="doctor-name"
+            placeholder="Doctor Name"
+            required
+          />
+          <input
+            type="text"
+            id="doctor-specialty"
+            placeholder="Specialty"
+            required
+          />
+          <button type="submit">Add Doctor</button>
+        </form>
+        <ul id="doctor-list"></ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2024 Hospital Management System. All Rights Reserved.</p>
+    </footer>
+
+    <script src="doctors.js"></script>
+  </body>
+</html>

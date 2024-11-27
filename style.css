@@ -1,92 +1,57 @@
-/* General Styles */
+/* styles.css */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  background-color: #f4f4f9;
-  color: #333;
+  font-family: Arial, sans-serif;
+  background-image: url("https://acsonnet.com/wp-content/uploads/2021/05/Hospital-Management-System.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff; /* Adjust text color for better visibility */
 }
 
-.header {
-  background: #0066cc;
-  color: white;
-  padding: 1rem;
+header {
   text-align: center;
+  padding: 1rem;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.6
+  ); /* Transparent background for the header */
+  color: #fff;
+}
+.icon {
+  width: 20px; /* Adjust size */
+  height: 20px;
+  margin-right: 5px;
+  vertical-align: middle; /* Align icons with text */
 }
 
 .navbar {
   display: flex;
   justify-content: center;
-  background: #005bb5;
-  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1rem;
 }
 
 .navbar a {
   color: white;
   text-decoration: none;
-  padding: 0.5rem 1rem;
+  margin: 0 1rem;
+  font-weight: bold;
 }
 
 .navbar a:hover {
-  background: #004494;
+  text-decoration: underline;
 }
 
 main {
-  padding: 1rem;
+  text-align: center;
+  margin-top: 2rem;
 }
 
-section {
-  margin-bottom: 2rem;
-  background: white;
-  padding: 1rem;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-form {
-  margin-bottom: 1rem;
-}
-
-form input {
-  padding: 0.5rem;
-  margin: 0.5rem 0;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-form button {
-  padding: 0.5rem 1rem;
-  background: #0066cc;
-  color: white;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
-form button:hover {
-  background: #004494;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-ul li {
-  background: #f4f4f9;
-  margin: 0.5rem 0;
-  padding: 0.5rem;
-  border: 1px solid #ddd;
-  border-radius: 3px;
-}
-
-.footer {
+footer {
   text-align: center;
   padding: 1rem;
-  background: #0066cc;
-  color: white;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
 }

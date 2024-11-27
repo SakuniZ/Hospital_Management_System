@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appointments Management</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Appointments Management</h1>
+    </header>
+
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="patients.html">Patients</a>
+      <a href="doctors.html">Doctors</a>
+    </nav>
+
+    <main>
+      <section>
+        <h2>Manage Appointments</h2>
+        <form id="appointment-form">
+          <input
+            type="text"
+            id="appointment-patient"
+            placeholder="Patient Name"
+            required
+          />
+          <input
+            type="text"
+            id="appointment-doctor"
+            placeholder="Doctor Name"
+            required
+          />
+          <input type="datetime-local" id="appointment-time" required />
+          <button type="submit">Add Appointment</button>
+        </form>
+        <ul id="appointment-list"></ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2024 Hospital Management System. All Rights Reserved.</p>
+    </footer>
+
+    <script src="appointments.js"></script>
+  </body>
+</html>
